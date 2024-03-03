@@ -4,8 +4,12 @@
 
 Penjelasan:
 
-1.Saat komputer dinyalakan, prosesor diaktifkan oleh BIOS (Basic Input/Output System). BIOS bertanggung jawab untuk melakukan inisialisasi awal pada sistem, termasuk mengaktifkan dan mempersiapkan prosesor agar siap untuk menjalankan perintah-perintah yang diberikan oleh sistem operasi. Dengan kata lain, prosesor dimulai atau diaktifkan oleh BIOS saat proses booting komputer dimulai.
+
+
+  1.Saat komputer dinyalakan, prosesor diaktifkan oleh BIOS (Basic Input/Output System). BIOS bertanggung jawab untuk melakukan inisialisasi awal pada sistem, termasuk mengaktifkan dan mempersiapkan prosesor agar siap untuk menjalankan perintah-perintah yang diberikan oleh sistem operasi. Dengan kata lain, prosesor dimulai atau diaktifkan oleh BIOS saat proses booting komputer dimulai.
+
 2. POST (Power-on Self Test) adalah serangkaian tes otomatis yang dilakukan oleh komputer saat pertama kali dinyalakan. Tujuan dari POST adalah untuk memeriksa dan memastikan bahwa semua komponen utama dalam sistem, seperti prosesor, memori, kartu grafis, dan penyimpanan, berfungsi dengan baik. Jika ada masalah dengan salah satu komponen, POST akan menghasilkan kode kesalahan atau bunyi bip tertentu sebagai indikasi masalah yang perlu diperbaiki sebelum proses booting sistem operasi dimulai. Dengan demikian, POST membantu memastikan bahwa komputer dapat berfungsi dengan baik sebelum melanjutkan ke tahap selanjutnya dalam proses booting.
+
 3. Windows Boot Manager adalah program boot loader yang digunakan pada sistem operasi Windows. Tugas utamanya adalah mengelola proses booting sistem, yaitu memilih dan memuat sistem operasi yang akan dijalankan pada komputer. Ketika komputer dinyalakan, Windows Boot Manager muncul dan memberikan opsi bagi pengguna untuk memilih sistem operasi yang ingin dimuat, jika ada lebih dari satu sistem operasi terinstal. Setelah pengguna memilih sistem operasi yang diinginkan, Windows Boot Manager akan memulai proses booting untuk memuat sistem operasi tersebut ke dalam memori dan menjalankannya.
 4. Windows Boot Loader adalah bagian dari Windows Boot Manager yang bertanggung jawab langsung untuk memuat sistem operasi Windows ke dalam memori komputer saat proses booting. Ini adalah komponen yang menjalankan instruksi-instruksi yang diperlukan untuk memulai kernel sistem operasi dan menginisialisasi proses booting. 
 5. Loading Windows Kernel, terutama ntoskrnl.exe, adalah tahap penting dalam proses booting sistem operasi Windows. Ntoskrnl.exe adalah singkatan dari "NT Operating System Kernel," yang merupakan inti dari sistem operasi Windows. Saat proses booting, setelah Windows Boot Loader memuat berkas-berkas sistem yang diperlukan, seperti sistem file dan driver, kernel Windows (ntoskrnl.exe) dimuat ke dalam memori.
@@ -15,7 +19,8 @@ Sebagai salah satu proses awal yang dimulai selama boot, winlogon.exe memastikan
 
 **Mengidentifikasi Laptop melalui aplikasi CPU-Z**
 
-- Spesifikasi CPU 
+- Spesifikasi CPU
+  
 ![1](https://github.com/anggiadwi/SysOP24-3123521028/assets/160558458/a21202a2-05ac-43fb-b541-59d5341bf111)
 
 Tab CPU memuat informasi prosesor, core speed, dan cache.
