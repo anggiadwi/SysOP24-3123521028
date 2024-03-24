@@ -3,9 +3,19 @@
 ### Siklus CPU
 Siklus CPU, juga dikenal sebagai siklus instruksi, adalah urutan langkah-langkah dasar yang dijalankan oleh CPU untuk mengeksekusi instruksi-instruksi yang diberikan oleh program yang sedang berjalan. Siklus CPU terdiri dari beberapa tahap yang secara berurutan dieksekusi untuk setiap instruksi. Tahap-tahap ini mencakup:
 
+![SYSOP1 drawio](https://github.com/anggiadwi/SysOP24-3123521028/assets/160558458/ef024deb-2d04-48dd-8d51-44c87388f15b)
+
+![SYSOP2 drawio](https://github.com/anggiadwi/SysOP24-3123521028/assets/160558458/b32c5978-2623-4aaa-89c2-98cb6388f0bf)
+
+![SYSOP3 drawio](https://github.com/anggiadwi/SysOP24-3123521028/assets/160558458/48dc2360-b0d5-46a8-943a-d8e3c7e299e9)
+
 - Fetch :  CPU mengambil instruksi berikutnya dari memori utama atau cache instruksi dan memuatnya ke dalam register instruksi di dalam CPU.
 
+![Untitled Diagram drawio (2)](https://github.com/anggiadwi/SysOP24-3123521028/assets/160558458/49cb7821-7ed1-49e8-9501-86814b87ed50)
+
 - Decode: Instruksi yang telah diambil kemudian didekode oleh CPU. Ini melibatkan penentuan operasi apa yang harus dilakukan oleh instruksi tersebut, serta lokasi dari operand (data) yang diperlukan.
+
+![SYSOP5 drawio](https://github.com/anggiadwi/SysOP24-3123521028/assets/160558458/2549a756-22da-4658-b58e-99dbac8a17d0)
 
 - Execute :  CPU menjalankan operasi yang ditentukan oleh instruksi. Ini bisa berupa operasi aritmatika, logika, pemindahan data, atau instruksi kontrol lainnya.
 
