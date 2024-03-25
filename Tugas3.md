@@ -2,22 +2,35 @@
 
 ### Siklus CPU
 Siklus CPU, juga dikenal sebagai siklus instruksi, adalah urutan langkah-langkah dasar yang dijalankan oleh CPU untuk mengeksekusi instruksi-instruksi yang diberikan oleh program yang sedang berjalan. Siklus CPU terdiri dari beberapa tahap yang secara berurutan dieksekusi untuk setiap instruksi. Tahap-tahap ini mencakup:
-
-![SYSOP1 drawio](https://github.com/anggiadwi/SysOP24-3123521028/assets/160558458/ef024deb-2d04-48dd-8d51-44c87388f15b)
-
-![SYSOP2 drawio](https://github.com/anggiadwi/SysOP24-3123521028/assets/160558458/b32c5978-2623-4aaa-89c2-98cb6388f0bf)
-
-![SYSOP3 drawio](https://github.com/anggiadwi/SysOP24-3123521028/assets/160558458/48dc2360-b0d5-46a8-943a-d8e3c7e299e9)
+## Ilustrasi dalam CPU
+![reg drawio](https://github.com/anggiadwi/SysOP24-3123521028/assets/160558458/61b6b7a9-7aec-410b-ad2d-fda9727b52c1)
 
 - Fetch :  CPU mengambil instruksi berikutnya dari memori utama atau cache instruksi dan memuatnya ke dalam register instruksi di dalam CPU.
 
-![Untitled Diagram drawio (2)](https://github.com/anggiadwi/SysOP24-3123521028/assets/160558458/49cb7821-7ed1-49e8-9501-86814b87ed50)
-
 - Decode: Instruksi yang telah diambil kemudian didekode oleh CPU. Ini melibatkan penentuan operasi apa yang harus dilakukan oleh instruksi tersebut, serta lokasi dari operand (data) yang diperlukan.
-
-![SYSOP5 drawio](https://github.com/anggiadwi/SysOP24-3123521028/assets/160558458/2549a756-22da-4658-b58e-99dbac8a17d0)
-
+- 
 - Execute :  CPU menjalankan operasi yang ditentukan oleh instruksi. Ini bisa berupa operasi aritmatika, logika, pemindahan data, atau instruksi kontrol lainnya.
+
+## Langkah -langkah dalam CPU
+
+![fetch first 1 drawio (1)](https://github.com/anggiadwi/SysOP24-3123521028/assets/160558458/02ba1252-34cf-4e2d-874b-032f78a708ae)
+
+![fetch first 1 drawio](https://github.com/anggiadwi/SysOP24-3123521028/assets/160558458/e006f329-9357-4338-a8f9-4af8d16c2c83)
+
+![fetch first 3 drawio](https://github.com/anggiadwi/SysOP24-3123521028/assets/160558458/ea967b3a-284b-4d06-819c-c57230a2cea2)
+
+
+![FIRST INT drawio](https://github.com/anggiadwi/SysOP24-3123521028/assets/160558458/ccc943bf-2ad0-458d-9657-46f1d7b3efe8)
+
+![SEC IND drawio](https://github.com/anggiadwi/SysOP24-3123521028/assets/160558458/8b6ad0b5-89be-4d57-b333-254228dd92a3)
+
+![8 drawio](https://github.com/anggiadwi/SysOP24-3123521028/assets/160558458/ff0e4a07-f51a-4b54-8c6f-8b1df12f7ac9)
+
+![fetch third drawio](https://github.com/anggiadwi/SysOP24-3123521028/assets/160558458/b898d702-5c0f-4790-9a37-6284f2de79e8)
+
+![decode third drawio](https://github.com/anggiadwi/SysOP24-3123521028/assets/160558458/0bc61d70-e7c1-429b-bbed-ad6fd59e32c7)
+
+
 
 ### Bahasa Pemrograman dan Compiler
 
