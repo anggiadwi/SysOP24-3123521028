@@ -14,10 +14,15 @@ CICS: CICS terutama dioperasikan dalam lingkungan mainframe IBM, meskipun ada pe
 Arsitektur CPU dan arsitektur sistem operasi memiliki keterkaitan yang erat dan saling mempengaruhi dalam pengembangan sistem komputer yang efisien dan andal. Perubahan dalam arsitektur CPU dapat mempengaruhi cara sistem operasi diimplementasikan, dan sebaliknya, peningkatan dalam sistem operasi dapat memanfaatkan fitur-fitur baru yang disediakan oleh CPU.
 
 -Instruksi dan Operasi CPU: Arsitektur CPU menentukan set instruksi dan operasi dasar yang dapat dilakukan oleh CPU. Sistem operasi kemudian harus ditulis atau disesuaikan agar kompatibel dengan set instruksi yang didukung oleh CPU tersebut. Misalnya, jika CPU mendukung instruksi SIMD (Single Instruction, Multiple Data), sistem operasi dan aplikasi dapat memanfaatkan fitur ini untuk meningkatkan kinerja pemrosesan data paralel.
+
 -Mode dan Pengaturan CPU: Arsitektur CPU memiliki mode operasi yang dapat dikonfigurasi oleh sistem operasi. Misalnya, mode pengguna (user mode) dan mode supervisor (kernel mode) adalah mode operasi yang umum pada CPU modern. Sistem operasi menggunakan mode supervisor untuk menjalankan tugas-tugas yang memerlukan akses langsung ke perangkat keras dan memastikan keamanan dan integritas sistem.
+
 -Penjadwalan dan Manajemen Sumber Daya: Arsitektur sistem operasi bergantung pada fitur-fitur yang disediakan oleh CPU untuk melakukan penjadwalan proses, manajemen memori, manajemen perangkat I/O, dan manajemen sumber daya lainnya. CPU dengan fitur-fitur seperti multiple core, hyperthreading, dan cache memory memungkinkan sistem operasi untuk mengimplementasikan strategi penjadwalan yang lebih canggih dan efisien.
+
 -Interrupt dan Exception Handling: CPU memiliki mekanisme untuk menghandle interrupt dan exception, yang digunakan oleh sistem operasi untuk menanggapi peristiwa luar biasa seperti permintaan I/O, kesalahan, atau interupsi perangkat keras. Sistem operasi harus dapat memprogram dan mengelola interrupt dan exception dengan baik untuk memastikan kinerja sistem yang stabil dan andal.
+
 -Interaksi dengan Perangkat Keras: Arsitektur sistem operasi bergantung pada antarmuka perangkat keras (hardware interface) yang disediakan oleh CPU. Ini termasuk instruksi-instruksi untuk berinteraksi dengan perangkat keras, seperti mengirimkan dan menerima data dari perangkat I/O, mengakses memori, dan melakukan operasi lainnya.
+
 -Optimasi Kinerja: Sistem operasi sering melakukan optimasi kinerja yang spesifik untuk arsitektur CPU tertentu. Hal ini dapat mencakup strategi penjadwalan yang dioptimalkan untuk jumlah core tertentu, pengaturan cache yang dioptimalkan, dan pemanfaatan fitur-fitur khusus CPU lainnya.
 
 
