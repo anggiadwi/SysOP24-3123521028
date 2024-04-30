@@ -313,6 +313,11 @@ $ ./[namafile].exe
 ![image](https://github.com/anggiadwi/SysOP24-3123521028/assets/160558458/927daf71-07b3-4fa6-84a9-27e5b90511a5)
 
   - untuk menghentikan proses tekan ctrl + c
+
+
+## Producer Consumer Problem
+- Producer Consumer Problem dalam sistem operasi melibatkan dua jenis proses: produsen, yang menghasilkan data atau barang, dan konsumen, yang mengambil barang dari produsen. Keduanya berinteraksi melalui buffer bersama, bertujuan untuk mengatur produksi dan konsumsi agar tidak terjadi situasi buffer penuh atau kosong.
+- Penyelesaiannya memanfaatkan teknik sinkronisasi seperti semafor atau mutex untuk mengawasi akses ke buffer, sambil memastikan efisiensi dan mencegah deadlock. Masalah ini memiliki banyak aplikasi dalam sistem operasi dan pemrograman paralel, di mana koordinasi antara proses-paroses paralel sangat penting untuk menghindari kekurangan atau kelebihan sumber daya.
   
   
       
