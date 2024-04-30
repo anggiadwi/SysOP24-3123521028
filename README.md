@@ -26,6 +26,7 @@ Arsitektur CPU dan arsitektur sistem operasi memiliki keterkaitan yang erat dan 
 **-**Optimasi Kinerja:**** Sistem operasi sering melakukan optimasi kinerja yang spesifik untuk arsitektur CPU tertentu. Hal ini dapat mencakup strategi penjadwalan yang dioptimalkan untuk jumlah core tertentu, pengaturan cache yang dioptimalkan, dan pemanfaatan fitur-fitur khusus CPU lainnya.
 
 ## FORK
+
 ![image](https://github.com/anggiadwi/SysOP24-3123521028/assets/160558458/abc63d9a-1d8b-467e-a642-3e73bd52021b)
 
 ```
@@ -102,7 +103,8 @@ $ g++ [namafile].cpp -o [namafile].exe
 $ ./[namafile].exe
 ```
 - hasil
-foto
+  ![image](https://github.com/anggiadwi/SysOP24-3123521028/assets/160558458/f6572437-91dc-4b42-9c82-005326d2a329)
+
 ```sh
 fork02.cpp
 ```
@@ -150,7 +152,8 @@ int main(void) {
 ```sh
 $ ./[namafile].exe
 ```
-foto
+![image](https://github.com/anggiadwi/SysOP24-3123521028/assets/160558458/c5468e52-d50b-4dd8-921a-2b804fe3b622)
+
 - untuk menghentikan proses tekan ctrl + c
 ```sh
 fork03.cpp
@@ -193,7 +196,8 @@ $ g++ [namafile].cpp -o [namafile].exe
 ```sh
 $ ./[namafile].exe
 ```
-foto
+![image](https://github.com/anggiadwi/SysOP24-3123521028/assets/160558458/4bc4ccea-9cf7-4443-8c5b-01bd188b25f7)
+
 
 ```sh
 Orphan
@@ -258,7 +262,8 @@ int main()
 ```sh
 $ ./[namafile].exe
 ```
-foto
+![image](https://github.com/anggiadwi/SysOP24-3123521028/assets/160558458/55145fac-c102-4a97-8e63-58d6c56d879e)
+
 - untuk menghentikan proses tekan ctrl + c
 ```sh
 Zombie
@@ -305,7 +310,8 @@ int main(void) {
 ```sh
 $ ./[namafile].exe
 ```
-  foto
+![image](https://github.com/anggiadwi/SysOP24-3123521028/assets/160558458/927daf71-07b3-4fa6-84a9-27e5b90511a5)
+
   - untuk menghentikan proses tekan ctrl + c
   
   
