@@ -25,7 +25,7 @@ Arsitektur CPU dan arsitektur sistem operasi memiliki keterkaitan yang erat dan 
 
 **-**Optimasi Kinerja:**** Sistem operasi sering melakukan optimasi kinerja yang spesifik untuk arsitektur CPU tertentu. Hal ini dapat mencakup strategi penjadwalan yang dioptimalkan untuk jumlah core tertentu, pengaturan cache yang dioptimalkan, dan pemanfaatan fitur-fitur khusus CPU lainnya.
 
-## FORK
+## FORK,ORPHAN,DAN ZOMBIE
 
 ![image](https://github.com/anggiadwi/SysOP24-3123521028/assets/160558458/abc63d9a-1d8b-467e-a642-3e73bd52021b)
 
