@@ -1,4 +1,4 @@
-
+### Boot Process:
 ![Untitled Diagram drawio](https://github.com/anggiadwi/SysOP24-3123521028/assets/160558458/8138467d-3ef3-475e-8a7a-be24f9d65aab)
 
 
