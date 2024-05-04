@@ -71,7 +71,6 @@ Berbagai bahasa pemrograman memiliki tingkat abstraksi yang berbeda, dari yang l
 Sistem operasi adalah perangkat lunak yang mengelola sumber daya komputer, menyediakan antarmuka antara perangkat keras dan perangkat lunak, serta menyediakan layanan-layanan dasar kepada aplikasi.
 Peran sistem operasi adalah menyediakan lingkungan eksekusi yang aman dan terstruktur untuk menjalankan aplikasi, mengatur dan mengelola akses ke sumber daya komputer, serta memberikan layanan-layanan dasar seperti manajemen proses, memori, perangkat input/output, dan file.
 
-
 ## Jawaban Soal No 3
 ### Menggunkan VM Debian
 ## Melakukan clone https://github.com/ferryastika/flops-iops
@@ -174,6 +173,7 @@ Analisis: Kedua perintah ini berguna untuk mengevaluasi kinerja sistem, terutama
 ![WhatsApp Image 2024-03-18 at 12 05 00_3d652453](https://github.com/anggiadwi/SysOP24-3123521028/assets/160558458/ec869ae7-ef83-4cc9-909a-4df5ec6f9188)
 Kesimpulan:
 Kesimpulannya, hasil dari kedua perintah tersebut memberikan gambaran tentang kinerja sistem dalam menangani operasi masukan/keluaran (IOPS) dan operasi matematika floating-point (FLOPS). Semakin tinggi nilai yang diperoleh, semakin baik kinerja sistem dalam aspek yang diukur. Namun, untuk mendapatkan gambaran yang lebih lengkap, perlu dilakukan analisis lebih lanjut dan pembandingan dengan standar kinerja atau hasil percobaan sebelumnya.
+
 
 
 
