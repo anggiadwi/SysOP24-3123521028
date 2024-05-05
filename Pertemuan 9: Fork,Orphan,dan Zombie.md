@@ -3,6 +3,11 @@
 
 ![image](https://github.com/anggiadwi/SysOP24-3123521028/assets/160558458/abc63d9a-1d8b-467e-a642-3e73bd52021b)
 
+Analisis: 
+$ git clone https://github.com/ferryastika/operatingsystem.git: Perintah ini digunakan untuk mengkloning repositori "operatingsystem" dari GitHub ke direktori lokal Anda.
+$ cd operatingsystem: Perintah ini digunakan untuk pindah ke direktori "operatingsystem" yang baru saja Anda kloning.
+$ ls: Perintah ini digunakan untuk menampilkan daftar file dan direktori di direktori saat ini, dalam hal ini, direktori "operatingsystem".
+
 ```
 $ su root
 $ sudo apt update
@@ -13,17 +18,32 @@ $ sudo apt install g++
 
 ![image](https://github.com/anggiadwi/SysOP24-3123521028/assets/160558458/cf1a6af2-967a-4d6d-8786-15fd422695ae)
 
+Analisis:
+
+Perintah di atas adalah sebagai berikut:
+
+$ su root: Perintah ini digunakan untuk beralih ke akun superuser (root) di sistem Linux. Ini memungkinkan Anda untuk menjalankan perintah dengan hak akses superuser.
+$ sudo apt update: Perintah ini digunakan untuk memperbarui daftar paket yang tersedia dari repositori paket yang terpasang pada sistem Anda. Ini akan memperbarui informasi tentang paket-paket yang ada sehingga Anda dapat menginstal versi terbaru dari paket-paket tersebut.
+$ sudo apt upgrade: Perintah ini digunakan untuk meng-upgrade semua paket yang telah diinstal ke versi terbaru yang tersedia dari repositori paket yang terpasang pada sistem Anda.
+$ sudo apt install g++: Perintah ini digunakan untuk menginstal paket g++, yang merupakan kompiler C++ untuk Linux. Ini akan memasang semua paket yang diperlukan untuk menginstal dan menjalankan g++ di sistem Anda.
+
 - Kembali menjadi User
 ```sh
 $ login [username]
 ```
 ![image](https://github.com/anggiadwi/SysOP24-3123521028/assets/160558458/028bdbbd-0434-43eb-9bbb-ec157575b2bb)
 
+Analisis:
+Perintah $ login [username] digunakan untuk melakukan login ke sistem dengan akun pengguna yang ditentukan. 
+
 -Masuk ke cd operatingsystem
 ```sh
 $ cd operatingsystem
 ```
 ![image](https://github.com/anggiadwi/SysOP24-3123521028/assets/160558458/64323030-181f-427b-8a6a-1877adecffa3)
+
+Analisis:
+Perintah $ cd operatingsystem digunakan untuk berpindah ke direktori operatingsystem.
 
 ```sh
 fork01.cpp
@@ -65,6 +85,9 @@ return 0;
 ```
 ![image](https://github.com/anggiadwi/SysOP24-3123521028/assets/160558458/9dc12365-59a2-4a83-a9ee-b67bd426bd00)
 
+Analisis: 
+Perintah $ nano [namafile].cpp digunakan untuk membuka atau membuat file baru dengan menggunakan editor teks nano. Setelah membuka file, pengguna dapat memasukkan kode program atau melakukan pengeditan pada file tersebut.
+
 - kemudian simpan file dengan ctrl+x
 - mengubah file.cpp menjadi exe
 ```sh
@@ -72,12 +95,16 @@ $ g++ [namafile].cpp -o [namafile].exe
 ```
 ![image](https://github.com/anggiadwi/SysOP24-3123521028/assets/160558458/d8999293-51b5-4857-a6a3-af4ed0157105)
 
+Analisis:Perintah $ g++ [namafile].cpp -o [namafile].exe digunakan untuk mengkompilasi kode sumber C++ yang disimpan dalam file [namafile].cpp menjadi sebuah file eksekusi yang dapat dijalankan. 
+
 - kemudian menjalankan kode
 ```sh
 $ ./[namafile].exe
 ```
 - hasil
   ![image](https://github.com/anggiadwi/SysOP24-3123521028/assets/160558458/f6572437-91dc-4b42-9c82-005326d2a329)
+
+Analisis:Perintah $ ./[namafile].exe digunakan untuk menjalankan file eksekusi yang telah dikompilasi sebelumnya.
 
 ```sh
 fork02.cpp
@@ -87,6 +114,8 @@ fork02.cpp
 $ nano [namafile].cpp
 ```
 ![image](https://github.com/anggiadwi/SysOP24-3123521028/assets/160558458/a819e3d7-e9e3-45d3-aa19-d4c8ee9ce8ae)
+
+Analisis: Perintah $ nano [namafile].cpp digunakan untuk membuka atau membuat file baru dengan menggunakan editor teks nano.
 
 - Memasukkan kode fork02.cpp
 ```sh
@@ -117,6 +146,14 @@ int main(void) {
 ```
 ![image](https://github.com/anggiadwi/SysOP24-3123521028/assets/160558458/74807299-c3b1-48c5-bb1f-5d26a15230f3)
 
+Analisis:Kode menggunakan fork() untuk membuat proses baru.
+Saat fork() dipanggil, sistem akan membuat salinan dari proses pemanggilan. Proses salinan ini disebut sebagai anak, sedangkan proses pemanggilan asli disebut sebagai induk.
+Kedua proses akan mengeksekusi pernyataan dalam loop while secara independen satu sama lain.
+Setiap proses akan menampilkan PID-nya sendiri menggunakan getpid().
+Nilai variabel x akan terus bertambah di setiap proses, namun proses anak dan induk memiliki salinan variabel x yang terpisah satu sama lain.
+
+
+
 - kemudian simpan file dengan ctrl + x
 - mengubah file.cpp menjadi .exe
 ```sh
@@ -127,6 +164,9 @@ int main(void) {
 $ ./[namafile].exe
 ```
 ![image](https://github.com/anggiadwi/SysOP24-3123521028/assets/160558458/c5468e52-d50b-4dd8-921a-2b804fe3b622)
+
+Analisis: 
+Pada kode fork02.cpp, kita memiliki program sederhana yang menggunakan fork() untuk membuat proses baru. Setiap proses, baik induk maupun anak, akan menampilkan PID (Process ID) dan nilai variabel x setiap 2 detik.
 
 - untuk menghentikan proses tekan ctrl + c
 ```sh
@@ -160,7 +200,11 @@ int main(void) {
 }
 ```
 ![image](https://github.com/anggiadwi/SysOP24-3123521028/assets/160558458/ab909a68-8ace-4bbf-80d1-83ba662b373b)
-
+Analisis:
+Saat kode dijalankan, fungsi fork() dipanggil, membuat proses anak.
+Jika proses anak tercipta, maka proses induk dan proses anak akan menjalankan loop yang mencetak PID mereka sendiri secara bergantian.
+Setiap proses mencetak PID-nya sendiri menggunakan getpid() dan menunggu selama 2 detik menggunakan sleep(2).
+Loop ini diulangi lima kali, sehingga total akan ada sepuluh cetakan PID (lima dari proses induk dan lima dari proses anak).
 - kemudian simpan file dengan ctrl + x
 - mengubah file.cpp menjadi .exe
 ```sh
@@ -171,7 +215,7 @@ $ g++ [namafile].cpp -o [namafile].exe
 $ ./[namafile].exe
 ```
 ![image](https://github.com/anggiadwi/SysOP24-3123521028/assets/160558458/4bc4ccea-9cf7-4443-8c5b-01bd188b25f7)
-
+Analisis:Pada kode fork03.cpp, kita memiliki program yang menggunakan fork() untuk membuat proses anak. Setelah proses anak tercipta, kedua proses (induk dan anak) akan mencetak PID mereka sendiri secara bergantian selama lima kali, dengan jeda waktu 2 detik setiap cetakan.
 
 ```sh
 Orphan
@@ -227,6 +271,15 @@ int main()
 ```
 ![image](https://github.com/anggiadwi/SysOP24-3123521028/assets/160558458/7771cea0-1479-4e97-8586-4d1a73558b1a)
 
+Analisis:Saat kode dijalankan, fungsi fork() dipanggil, membuat proses anak.
+Jika proses anak tercipta (pid == 0), maka pesan "Child process" akan dicetak, diikuti dengan mencetak PID dan PID induk dari proses anak.
+Proses anak kemudian memasuki sleep(10), menghentikan eksekusi selama 10 detik.
+Selama proses anak tertidur, proses induk selesai eksekusi.
+Setelah 10 detik, proses anak akan mencetak PID-nya dan PID induknya lagi. Karena proses induk sudah selesai, PID induk yang dicetak adalah PID dari proses init, bukan proses induk asli.
+Jika proses anak tidak tercipta (pid > 0), maka pesan "Parent process" akan dicetak, diikuti dengan mencetak PID dari proses induk.
+Jika gagal membuat proses anak (pid < 0), pesan "Failed to create child process" akan dicetak.
+Kode ini memberikan contoh tentang bagaimana proses anak dapat menjadi "anak yatim piatu" atau "anak angkat" setelah proses induk selesai eksekusi. Proses anak tetap berjalan, dikelola oleh proses init (biasanya PID 1), meskipun proses induk sudah selesai.
+
 - kemudian simpan file dengan ctrl + x
 - mengubah file.cpp menjadi exe
 ```sh
@@ -237,6 +290,8 @@ int main()
 $ ./[namafile].exe
 ```
 ![image](https://github.com/anggiadwi/SysOP24-3123521028/assets/160558458/55145fac-c102-4a97-8e63-58d6c56d879e)
+
+Analisis:Pada kode orphan, kita memiliki program yang menggunakan fork() untuk membuat proses anak. Proses induk kemudian segera selesai eksekusi, sementara proses anak tetap berjalan setelah proses induk selesai.
 
 - untuk menghentikan proses tekan ctrl + c
 ```sh
@@ -275,6 +330,14 @@ int main(void) {
 ```
 ![image](https://github.com/anggiadwi/SysOP24-3123521028/assets/160558458/a7c03651-778e-49ae-9139-a630914e6526)
 
+Analisis:
+Saat kode dijalankan, fungsi fork() dipanggil, membuat proses anak.
+Jika proses anak tercipta, maka proses anak akan menjalankan loop yang mencetak PID-nya sendiri dan nilai x dengan jeda waktu 2 detik.
+Proses induk tidak melakukan apapun setelah menciptakan proses anak, sehingga tidak menunggu proses anak selesai.
+Karena proses induk tidak menunggu proses anak selesai, maka setelah proses anak selesai dijalankan, namun proses induk belum mengambil status exit dari proses anak, proses anak akan menjadi zombie.
+Proses anak akan tetap menjadi zombie sampai proses induk mengambil status exit dari proses anak menggunakan wait() atau waitpid().
+Penggunaan wait() atau waitpid() sangat penting untuk menghindari terjadinya zombie processes dalam sistem operasi karena proses zombie dapat menyebabkan penumpukan sumber daya sistem yang tidak perlu.
+
 - kemudian simpan file dengan ctrl + x
 - mengubah file.cpp menjadi .exe
 ```sh
@@ -285,6 +348,9 @@ int main(void) {
 $ ./[namafile].exe
 ```
 ![image](https://github.com/anggiadwi/SysOP24-3123521028/assets/160558458/927daf71-07b3-4fa6-84a9-27e5b90511a5)
+
+Analisis:
+Pada kode zombie, kita memiliki program yang menggunakan fork() untuk membuat proses anak. Namun, perbedaannya dengan kode sebelumnya adalah bahwa tidak ada panggilan ke fungsi wait() atau waitpid() untuk menunggu proses anak selesai. Akibatnya, proses anak akan menjadi zombie setelah selesai dijalankan.
 
   - untuk menghentikan proses tekan ctrl + c
 
