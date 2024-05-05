@@ -2,6 +2,7 @@
 
 ![image](https://github.com/anggiadwi/SysOP24-3123521028/assets/160558458/3efd8e3f-3a73-4122-a306-34336db10b62)
 
+Analisis: Git akan membuat salinan dari repositori "flops-iops" yang tersedia di GitHub ke dalam direktori lokal di komputer pengguna. Ini memungkinkan pengguna untuk memiliki salinan penuh dari repositori tersebut di komputer lokal mereka untuk digunakan, modifikasi, atau pengembangan lebih lanjut.
 
 
 ## Build Binaries
@@ -43,10 +44,15 @@ Analisis: Perintah $make install bertanggung jawab untuk menyalin file-file yang
   $ iops64 $(nproc)
 ```
 ![image](https://github.com/anggiadwi/SysOP24-3123521028/assets/160558458/8ccdf9f7-6aa6-4576-be93-2b419c26ff9c)
+
+Analisis:  digunakan untuk menjalankan program atau perintah iops64 dengan argumen jumlah CPU yang ada di sistem. 
+
 ```sh
 $ flops64 $(nproc)
 ```
 ![image](https://github.com/anggiadwi/SysOP24-3123521028/assets/160558458/42b8e8d5-3f6b-4197-8aa8-ddcc282cce72)
+
+Analisis: digunakan untuk menjalankan program atau perintah flops64 dengan argumen jumlah CPU yang ada di sistem. Program atau perintah ini mungkin terkait dengan pengukuran atau pengujian kinerja komputasi berbasis CPU, seperti menghitung jumlah operasi floating-point per detik (FLOPS).
 
 
 - ## Percobaan 2
