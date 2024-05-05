@@ -23,6 +23,8 @@ Sebagai salah satu proses awal yang dimulai selama boot, winlogon.exe memastikan
   
 ![1](https://github.com/anggiadwi/SysOP24-3123521028/assets/160558458/a21202a2-05ac-43fb-b541-59d5341bf111)
 
+Analisis:
+
 Tab CPU memuat informasi prosesor, core speed, dan cache.
 
 - prosesor : menggunakan processor Intel core i5 4200u Menampilkan nama dari processor yang digunakan pada laptop atau komputer
@@ -34,6 +36,7 @@ Tab CPU memuat informasi prosesor, core speed, dan cache.
 
 ![2](https://github.com/anggiadwi/SysOP24-3123521028/assets/160558458/12c1978d-856b-4ab9-b657-9ca9d2f29988)
 
+Analisis:
 - Tab mainboard memuat informasi matherboaerd, bios, dan graphi interface
 
 - motherboard manufacturer yaitu Hewlett -Packard, menggunakan model 2166, spesifikasi bus yaitu PCI-Express 2.0 (5.0 GT/S), chipset motherboard menggunakan Intel Haswell-ULT  REV. 09 dan Southbridge Intel H8x/P8 REV. C1.
@@ -42,6 +45,7 @@ Tab CPU memuat informasi prosesor, core speed, dan cache.
 
 ![3](https://github.com/anggiadwi/SysOP24-3123521028/assets/160558458/889761bc-9a76-4781-a8c0-fda328252d55)
 
+Analisis:
 - tab memory memuat informasi general dan timings
 
 - general laptop ini menngunakan type memory DDR3 yang berukuran 4 GBytes
@@ -50,14 +54,19 @@ Tab CPU memuat informasi prosesor, core speed, dan cache.
 
 ![4](https://github.com/anggiadwi/SysOP24-3123521028/assets/160558458/a4a4ba05-33ef-4698-9c1f-ff034f3abd68)
 
+Analisis:
 tab SPD memuat informasi memory slot selection pada laptop ini terpasang 1 slot memory yang berukuran 2 GBytes, model manuf SK Hynik
 
 ![5](https://github.com/anggiadwi/SysOP24-3123521028/assets/160558458/3b53cc29-887a-49c0-8edc-27014d3d322e)
+
+Analisis:
 tab Graphiscs memuat informasi GPU dan kapasitas memory laptop ini menggunaka GPU Intel HD Graphics Family dengan Hewlett-Packard
 
 ![6](https://github.com/anggiadwi/SysOP24-3123521028/assets/160558458/471b9acd-748f-448e-b5bc-a8c3ad85146a)
 
+Analisis:
 tab Bench memuat informasi bahwa laptop ini menggunakan bancmark versi 17.01.64
 ![7](https://github.com/anggiadwi/SysOP24-3123521028/assets/160558458/5634c90e-3e08-4260-b99b-6413674c19ec)
 
+Analisis:
 tab about memuat informasi tentang CPUID dan laptop ini menggunakan Microsoft Windows 10 Professional (x64), version 21H2, Build 190044.1415 Directx 12.0
