@@ -1,8 +1,10 @@
 ## Tugas Pendahuluan
 1.Apa yang dimaksud redirection?
 Redirection adalah proses mengalihkan aliran masukan atau keluaran dari atau ke suatu sumber daya tertentu di dalam sistem operasi atau lingkungan perintah. Dalam konteks sistem operasi atau lingkungan perintah seperti Unix, Linux, dan Windows Command Prompt, redirection digunakan untuk mengontrol aliran data antara program, file, atau perangkat lainnya.
+
 2. Apa yang dimaksud pipeline?
 Pipeline adalah konsep dalam sistem operasi dan lingkungan perintah yang memungkinkan output dari satu perintah atau program untuk menjadi masukan dari perintah atau program berikutnya secara berurutan.
+
 3. Apa yang dimaksud perintah di bawah ini : echo, cat, more, sort, grep, wc, cut, uniq
 
 - echo: Perintah echo digunakan untuk mencetak teks atau variabel ke layar atau ke output standar. 
@@ -232,7 +234,6 @@ $ cat output
 ```
 ![image](https://github.com/anggiadwi/SysOP24-3123521028/assets/160558458/71232622-0bed-42dc-bd6c-0d680a552d54)
 Analisis:
-
 - $ echo bye >> output:
 Ini adalah perintah yang menambahkan teks "bye" ke akhir file "output" menggunakan operator append >>. Ini akan menambahkan "bye" sebagai baris baru di bawah "hello" dalam file "output".
 
@@ -245,7 +246,7 @@ $ cat < output
 ```
 ![image](https://github.com/anggiadwi/SysOP24-3123521028/assets/160558458/b69f43d0-3d7c-4298-9b93-2a6742c0ca2f)
 
-Analisis:
+Analisis:perintah ini membaca isi dari file "output" dan menampilkannya di terminal menggunakan perintah cat.
 
 ### 5.Pembelokan standart input dan standar output dapat dikombinasikan tetapi tidak boleh menggunakan nama file yang sama sebgian standart input dan output
 ```sh
