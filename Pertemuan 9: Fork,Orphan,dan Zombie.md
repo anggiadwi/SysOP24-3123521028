@@ -89,9 +89,9 @@ Analisis:
 Perintah $ nano [namafile].cpp digunakan untuk membuka atau membuat file baru dengan menggunakan editor teks nano. Setelah membuka file, pengguna dapat memasukkan kode program atau melakukan pengeditan pada file tersebut.
 
 - kemudian simpan file dengan ctrl+x
-- mengubah file.cpp menjadi exe
+- mengubah file.cpp menjadi file
 ```sh
-$ g++ [namafile].cpp -o [namafile].exe
+$ g++ [namafile].cpp -o [namafile]
 ```
 ![image](https://github.com/anggiadwi/SysOP24-3123521028/assets/160558458/d8999293-51b5-4857-a6a3-af4ed0157105)
 
@@ -102,7 +102,7 @@ Analisis:Perintah $ g++ [namafile].cpp -o [namafile].exe digunakan untuk mengkom
 $ ./[namafile].exe
 ```
 - hasil
-  ![image](https://github.com/anggiadwi/SysOP24-3123521028/assets/160558458/f6572437-91dc-4b42-9c82-005326d2a329)
+![image](https://github.com/anggiadwi/SysOP24-3123521028/assets/160558458/958f2012-3dc7-4df3-85dd-737fe05617c3)
 
 Analisis:Perintah $ ./[namafile].exe digunakan untuk menjalankan file eksekusi yang telah dikompilasi sebelumnya.
 
@@ -147,23 +147,20 @@ int main(void) {
 ![image](https://github.com/anggiadwi/SysOP24-3123521028/assets/160558458/74807299-c3b1-48c5-bb1f-5d26a15230f3)
 
 Analisis:Kode menggunakan fork() untuk membuat proses baru.
-Saat fork() dipanggil, sistem akan membuat salinan dari proses pemanggilan. Proses salinan ini disebut sebagai anak, sedangkan proses pemanggilan asli disebut sebagai induk.
-Kedua proses akan mengeksekusi pernyataan dalam loop while secara independen satu sama lain.
-Setiap proses akan menampilkan PID-nya sendiri menggunakan getpid().
-Nilai variabel x akan terus bertambah di setiap proses, namun proses anak dan induk memiliki salinan variabel x yang terpisah satu sama lain.
+Saat fork() dipanggil, sistem akan membuat salinan dari proses pemanggilan. Proses salinan ini disebut sebagai anak, sedangkan proses pemanggilan asli disebut sebagai induk.Kedua proses akan mengeksekusi pernyataan dalam loop while secara independen satu sama lain.Setiap proses akan menampilkan PID-nya sendiri menggunakan getpid().Nilai variabel x akan terus bertambah di setiap proses, namun proses anak dan induk memiliki salinan variabel x yang terpisah satu sama lain.
 
 
 
 - kemudian simpan file dengan ctrl + x
-- mengubah file.cpp menjadi .exe
+- mengubah file.cpp menjadi file
 ```sh
-   $ g++ [namafile].cpp -o [namafile].exe
+   $ g++ [namafile].cpp -o [namafile]
 ```
 - kemudian menjalankan kode
 ```sh
-$ ./[namafile].exe
+$ ./[namafile]
 ```
-![image](https://github.com/anggiadwi/SysOP24-3123521028/assets/160558458/c5468e52-d50b-4dd8-921a-2b804fe3b622)
+![image](https://github.com/anggiadwi/SysOP24-3123521028/assets/160558458/b098d0ef-8e64-4ad5-9580-663be992c0b4)
 
 Analisis: 
 Pada kode fork02.cpp, kita memiliki program sederhana yang menggunakan fork() untuk membuat proses baru. Setiap proses, baik induk maupun anak, akan menampilkan PID (Process ID) dan nilai variabel x setiap 2 detik.
@@ -206,15 +203,16 @@ Jika proses anak tercipta, maka proses induk dan proses anak akan menjalankan lo
 Setiap proses mencetak PID-nya sendiri menggunakan getpid() dan menunggu selama 2 detik menggunakan sleep(2).
 Loop ini diulangi lima kali, sehingga total akan ada sepuluh cetakan PID (lima dari proses induk dan lima dari proses anak).
 - kemudian simpan file dengan ctrl + x
-- mengubah file.cpp menjadi .exe
+- mengubah file.cpp menjadi file
 ```sh
-$ g++ [namafile].cpp -o [namafile].exe
+$ g++ [namafile].cpp -o [namafile]
 ```
 - kemudian menjalankan kode
 ```sh
-$ ./[namafile].exe
+$ ./[namafile]
 ```
-![image](https://github.com/anggiadwi/SysOP24-3123521028/assets/160558458/4bc4ccea-9cf7-4443-8c5b-01bd188b25f7)
+![image](https://github.com/anggiadwi/SysOP24-3123521028/assets/160558458/006a2fdd-efd5-40bf-9346-7bbbf2b765b7)
+
 Analisis:Pada kode fork03.cpp, kita memiliki program yang menggunakan fork() untuk membuat proses anak. Setelah proses anak tercipta, kedua proses (induk dan anak) akan mencetak PID mereka sendiri secara bergantian selama lima kali, dengan jeda waktu 2 detik setiap cetakan.
 
 ```sh
@@ -281,15 +279,16 @@ Jika gagal membuat proses anak (pid < 0), pesan "Failed to create child process"
 Kode ini memberikan contoh tentang bagaimana proses anak dapat menjadi "anak yatim piatu" atau "anak angkat" setelah proses induk selesai eksekusi. Proses anak tetap berjalan, dikelola oleh proses init (biasanya PID 1), meskipun proses induk sudah selesai.
 
 - kemudian simpan file dengan ctrl + x
-- mengubah file.cpp menjadi exe
+- mengubah file.cpp menjadi file
 ```sh
-   $ g++ [namafile].c -o [namafile].exe
+   $ g++ [namafile].c -o [namafile]
 ```
 - kemudian menjalankan kode
 ```sh
-$ ./[namafile].exe
+$ ./[namafile]
 ```
-![image](https://github.com/anggiadwi/SysOP24-3123521028/assets/160558458/55145fac-c102-4a97-8e63-58d6c56d879e)
+![image](https://github.com/anggiadwi/SysOP24-3123521028/assets/160558458/2d8fce92-cf68-4b17-bcfb-e1f69155b521)
+
 
 Analisis:Pada kode orphan, kita memiliki program yang menggunakan fork() untuk membuat proses anak. Proses induk kemudian segera selesai eksekusi, sementara proses anak tetap berjalan setelah proses induk selesai.
 
@@ -339,15 +338,16 @@ Proses anak akan tetap menjadi zombie sampai proses induk mengambil status exit 
 Penggunaan wait() atau waitpid() sangat penting untuk menghindari terjadinya zombie processes dalam sistem operasi karena proses zombie dapat menyebabkan penumpukan sumber daya sistem yang tidak perlu.
 
 - kemudian simpan file dengan ctrl + x
-- mengubah file.cpp menjadi .exe
+- mengubah file.cpp menjadi file
 ```sh
-   $ g++ [namafile].c -o [namafile].exe
+   $ g++ [namafile].c -o [namafile]
 ```
 - kemudian menjalankan kode
 ```sh
-$ ./[namafile].exe
+$ ./[namafile]
 ```
-![image](https://github.com/anggiadwi/SysOP24-3123521028/assets/160558458/927daf71-07b3-4fa6-84a9-27e5b90511a5)
+![image](https://github.com/anggiadwi/SysOP24-3123521028/assets/160558458/3e60d87c-7cd1-4c48-adc4-6302445c1d28)
+
 
 Analisis:
 Pada kode zombie, kita memiliki program yang menggunakan fork() untuk membuat proses anak. Namun, perbedaannya dengan kode sebelumnya adalah bahwa tidak ada panggilan ke fungsi wait() atau waitpid() untuk menunggu proses anak selesai. Akibatnya, proses anak akan menjadi zombie setelah selesai dijalankan.
