@@ -276,7 +276,7 @@ Selama proses anak tertidur, proses induk selesai eksekusi.
 Setelah 10 detik, proses anak akan mencetak PID-nya dan PID induknya lagi. Karena proses induk sudah selesai, PID induk yang dicetak adalah PID dari proses init, bukan proses induk asli.
 Jika proses anak tidak tercipta (pid > 0), maka pesan "Parent process" akan dicetak, diikuti dengan mencetak PID dari proses induk.
 Jika gagal membuat proses anak (pid < 0), pesan "Failed to create child process" akan dicetak.
-Kode ini memberikan contoh tentang bagaimana proses anak dapat menjadi "anak yatim piatu" atau "anak angkat" setelah proses induk selesai eksekusi. Proses anak tetap berjalan, dikelola oleh proses init (biasanya PID 1), meskipun proses induk sudah selesai.
+Kode ini memberikan contoh tentang bagaimana proses anak  setelah proses induk selesai eksekusi. Proses anak tetap berjalan, dikelola oleh proses init (biasanya PID 1), meskipun proses induk sudah selesai.
 
 - kemudian simpan file dengan ctrl + x
 - mengubah file.cpp menjadi file
@@ -287,8 +287,7 @@ Kode ini memberikan contoh tentang bagaimana proses anak dapat menjadi "anak yat
 ```sh
 $ ./[namafile]
 ```
-![image](https://github.com/anggiadwi/SysOP24-3123521028/assets/160558458/2d8fce92-cf68-4b17-bcfb-e1f69155b521)
-
+![image](https://github.com/anggiadwi/SysOP24-3123521028/assets/160558458/23d0d41a-5538-4c6d-82d5-4dd9886d717d)
 
 Analisis:Pada kode orphan, kita memiliki program yang menggunakan fork() untuk membuat proses anak. Proses induk kemudian segera selesai eksekusi, sementara proses anak tetap berjalan setelah proses induk selesai.
 
@@ -346,8 +345,8 @@ Penggunaan wait() atau waitpid() sangat penting untuk menghindari terjadinya zom
 ```sh
 $ ./[namafile]
 ```
-![image](https://github.com/anggiadwi/SysOP24-3123521028/assets/160558458/3e60d87c-7cd1-4c48-adc4-6302445c1d28)
 
+![image](https://github.com/anggiadwi/SysOP24-3123521028/assets/160558458/16a31a2b-7a22-4d9f-afd3-56c5112e2f0c)
 
 Analisis:
 Pada kode zombie, kita memiliki program yang menggunakan fork() untuk membuat proses anak. Namun, perbedaannya dengan kode sebelumnya adalah bahwa tidak ada panggilan ke fungsi wait() atau waitpid() untuk menunggu proses anak selesai. Akibatnya, proses anak akan menjadi zombie setelah selesai dijalankan.
