@@ -5,7 +5,7 @@
 
 Analisis: 
 $ git clone https://github.com/ferryastika/operatingsystem.git: Perintah ini digunakan untuk mengkloning repositori "operatingsystem" dari GitHub ke direktori lokal Anda.
-$ cd operatingsystem: Perintah ini digunakan untuk pindah ke direktori "operatingsystem" yang baru saja Anda kloning.
+$ cd operatingsystem: Perintah ini digunakan untuk pindah ke direktori "operatingsystem" yang baru saja di kloning.
 $ ls: Perintah ini digunakan untuk menampilkan daftar file dan direktori di direktori saat ini, dalam hal ini, direktori "operatingsystem".
 
 ```
@@ -22,10 +22,10 @@ Analisis:
 
 Perintah di atas adalah sebagai berikut:
 
-$ su root: Perintah ini digunakan untuk beralih ke akun superuser (root) di sistem Linux. Ini memungkinkan Anda untuk menjalankan perintah dengan hak akses superuser.
-$ sudo apt update: Perintah ini digunakan untuk memperbarui daftar paket yang tersedia dari repositori paket yang terpasang pada sistem Anda. Ini akan memperbarui informasi tentang paket-paket yang ada sehingga Anda dapat menginstal versi terbaru dari paket-paket tersebut.
-$ sudo apt upgrade: Perintah ini digunakan untuk meng-upgrade semua paket yang telah diinstal ke versi terbaru yang tersedia dari repositori paket yang terpasang pada sistem Anda.
-$ sudo apt install g++: Perintah ini digunakan untuk menginstal paket g++, yang merupakan kompiler C++ untuk Linux. Ini akan memasang semua paket yang diperlukan untuk menginstal dan menjalankan g++ di sistem Anda.
+$ su root: Perintah ini digunakan untuk beralih ke akun superuser (root) di sistem Linux. Ini memungkinkan untuk menjalankan perintah dengan hak akses superuser.
+$ sudo apt update: Perintah ini digunakan untuk memperbarui daftar paket yang tersedia dari repositori paket yang terpasang pada sistem . Ini akan memperbarui informasi tentang paket-paket yang ada sehingga  dapat menginstal versi terbaru dari paket-paket tersebut.
+$ sudo apt upgrade: Perintah ini digunakan untuk meng-upgrade semua paket yang telah diinstal ke versi terbaru yang tersedia dari repositori paket yang terpasang pada sistem .
+$ sudo apt install g++: Perintah ini digunakan untuk menginstal paket g++, yang merupakan kompiler C++ untuk Linux. Ini akan memasang semua paket yang diperlukan untuk menginstal dan menjalankan g++ di sistem.
 
 - Kembali menjadi User
 ```sh
