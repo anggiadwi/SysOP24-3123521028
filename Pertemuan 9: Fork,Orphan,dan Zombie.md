@@ -99,7 +99,7 @@ Analisis:Perintah $ g++ [namafile].cpp -o [namafile].exe digunakan untuk mengkom
 
 - kemudian menjalankan kode
 ```sh
-$ ./[namafile].exe
+$ ./[namafile]
 ```
 - hasil
 ![image](https://github.com/anggiadwi/SysOP24-3123521028/assets/160558458/958f2012-3dc7-4df3-85dd-737fe05617c3)
