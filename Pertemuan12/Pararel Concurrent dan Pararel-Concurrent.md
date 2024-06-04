@@ -107,3 +107,51 @@ Gambar di atas menunjukkan perbedaan antara eksekusi serial dan eksekusi konkure
 - **Eksekusi Serial:** Tugas-tugas dijalankan satu per satu secara berurutan. Tugas berikutnya dimulai hanya setelah tugas sebelumnya selesai. Cocok untuk sistem yang membutuhkan urutan eksekusi yang jelas dan sederhana, namun kurang efisien dalam hal waktu eksekusi total.
 
 - **Eksekusi Konkuren:** Tugas-tugas dijalankan bersamaan, memungkinkan overlap dalam eksekusi tugas-tugas tersebut. Cocok untuk sistem yang membutuhkan efisiensi dan responsivitas yang tinggi, namun lebih kompleks untuk diimplementasikan dan di-debug.
+
+## Dining Philosophers Problem
+
+Masalah Dining Philosophers adalah contoh klasik dalam komputasi paralel dan sinkronisasi yang menunjukkan tantangan dalam mengelola sumber daya terbatas di antara beberapa proses tanpa menimbulkan deadlock atau kelaparan. Masalah ini pertama kali diajukan oleh Edsger Dijkstra pada tahun 1965.
+
+**Deskripsi Masalah**: Lima filsuf duduk mengelilingi meja bundar, dengan satu piring spageti di depan masing-masing. Di antara setiap dua filsuf terdapat satu garpu. Untuk makan, setiap filsuf memerlukan dua garpu (satu di sebelah kiri dan satu di sebelah kanan). Filsuf bergantian antara berpikir dan makan. Mereka harus mengambil dua garpu untuk makan dan meletakkan kembali kedua garpu tersebut setelah selesai makan, sehingga garpu dapat digunakan oleh filsuf lain.
+
+### **Tantangan:**
+
+- **Deadlock:** Jika setiap filsuf mengambil garpu di sebelah kanannya pada waktu yang sama, mereka akan terus menunggu untuk garpu di sebelah kiri tanpa batas waktu, menyebabkan deadlock.
+- **Kelaparan (Starvation):** Jika pengaturan pengambilan garpu tidak adil, seorang filsuf mungkin tidak pernah mendapatkan dua garpu sekaligus, sehingga dia tidak pernah bisa makan.
+  
+### **Solusi untuk Masalah Dining Philosophers:** 
+
+- **Menggunakan Semaphore:** Dengan menggunakan semafor untuk mengatur pengambilan dan pelepasan garpu, deadlock dan kelaparan dapat dihindari.
+- **Mengatur Urutan Pengambilan Garpu:** Mengatur agar filsuf mengambil garpu kiri terlebih dahulu, lalu garpu kanan (atau sebaliknya), dan memastikan bahwa tidak ada dua filsuf yang memulai pada waktu yang sama.
+Asimetris Pengambilan Garpu: Memodifikasi pengambilan garpu untuk satu filsuf, misalnya, setiap filsuf mengambil garpu kiri terlebih dahulu, kecuali filsuf terakhir yang mengambil garpu kanan terlebih dahulu.
+- **Resource Hierarchy Solution:** Memberikan prioritas atau nomor urut pada setiap garpu dan mengatur filsuf untuk mengambil garpu dengan nomor urut lebih rendah terlebih dahulu, kemudian yang lebih tinggi.
+
+## **Reader Writer Problem**
+
+Masalah Reader-Writer dalam sistem operasi melibatkan beberapa pembaca (readers) dan penulis (writers) yang mengakses sumber daya bersama. Tantangan utama adalah memastikan pembaca dan penulis dapat bekerja tanpa menyebabkan data tidak konsisten, deadlock, atau kelaparan.
+
+### **Deskripsi Masalah**
+- Pembaca (Readers): Dapat membaca data secara bersamaan.
+-Penulis (Writers): Membutuhkan akses eksklusif untuk menulis data.
+### **Tantangan**
+- Konsistensi Data: Pembaca tidak boleh mengakses saat penulis menulis.
+- Deadlock: Mencegah situasi di mana proses saling menunggu.
+- Kelaparan (Starvation): Menghindari proses yang tidak pernah mendapatkan giliran.
+### **Solusi**
+- Semaphore:
+   - Menggunakan semafor untuk mengatur akses penulis (write semaphore) dan jumlah pembaca (read semaphore).
+     
+- Prioritas Pembaca atau Penulis:
+   - Prioritas Pembaca: Pembaca terus membaca jika tidak ada penulis yang menunggu, namun ini dapat menyebabkan kelaparan          penulis.
+   - Prioritas Penulis: Penulis diberi prioritas lebih tinggi, tetapi dapat menyebabkan kelaparan pembaca.
+- Solusi Adil:
+
+   -Menggunakan antrian untuk memastikan pembaca dan penulis diberi giliran secara adil.
+
+Memahami dan mengimplementasikan solusi Reader-Writer penting untuk memastikan akses sumber daya yang efisien dan menghindari konflik di antara proses yang bersaing.
+
+
+
+
+
+
